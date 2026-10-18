@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 OWNER_ID      = 1546620976966541485
 BOOST_SERVER  = 1558615711411085454
 PREMIUM_ROLE  = 1559663544860020776
-TOKEN         = "YOUR_BOT_TOKEN_HERE"
+TOKEN         = os.environ.get("TOKEN")
 
 # ── Premium storage ───────────────────────────────────────────────────────────
 PREM_FILE = "premium.json"
